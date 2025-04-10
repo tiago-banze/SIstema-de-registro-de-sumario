@@ -1,0 +1,46 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 0;
+  }
+
+  span input{
+    width: 200px;
+    height: 25px;
+    border-radius: 5px;
+    font-size: 19px;
+    box-shadow: 1px 2px 1px 1px black;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    /* padding: 4px; */
+    margin-left: 200px; 
+  }
+
+  h4{
+    margin-right: 200px;
+  }
+  
+  
+  span button{
+    height: 25px;
+    border-radius: 5px;
+    background-color: blue;
+    color: white;
+  }
+  
+  /* .container {
+    margin-top: 80px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  } */
+  
+  h1 {
+    text-align: center;
+    /* margin-bottom: 20px; */
+    margin-top: 20px;
+  }
+  
+  

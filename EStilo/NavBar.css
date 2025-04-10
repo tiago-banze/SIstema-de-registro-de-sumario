@@ -1,0 +1,197 @@
+body { 
+  margin: 0; 
+  overflow-x: hidden;
+}
+
+/* .cima{ 
+  width: 100vw; 
+  height: 20px; 
+  background-color: black; 
+  position: fixed; 
+} */
+
+ul, a { 
+  font-size: 25px; 
+}
+.adicionar:hover {
+  cursor: pointer;
+  width: 55px;
+  height: 55px;
+}
+
+/* .perfil { 
+  font-size: 15px; 
+} */
+
+ul.sidenav { 
+  list-style-type: none; 
+  margin: 0; 
+  padding: 0; 
+  width: 25%; 
+  /* background-color: #06003a; */ 
+  background-color: rgb(239, 204, 139); 
+  position: fixed; 
+  height: 100%; 
+  overflow: hidden; 
+}
+
+.dropdown:hover .dropbtn { 
+  background-color: #8c8c8e; 
+  letter-spacing: 2px; 
+}
+
+/* .dropdownperfil:hover .dropbtnperfil { 
+  background-color: #f1f1f1; 
+  letter-spacing: 1.5px; 
+} */
+
+/* .dropbtnperfil { 
+  color: white; 
+  padding: 16px; 
+  font-size: 16px; 
+  border: none; 
+  cursor: pointer; 
+  background-color: #f1f1f1; 
+  background-color: #06003a; 
+  position: relative; 
+  display: inline-block; 
+} */
+
+/* Estilize o botão suspenso */
+.dropbtn { 
+  /* background-color: #4CAF50; */ 
+  color: #000; 
+  padding: 16px; 
+  padding-right: 150px; 
+  border: 2px solid #000; 
+  font-size: 19px; 
+  width: 500px; 
+  /* border: none; */ 
+  cursor: pointer; 
+  background-color: #e8e5e5; 
+}
+
+/* O contêiner <div> - necessário para posicionar o conteúdo do menu suspenso */
+.dropdown { 
+  position: relative; 
+  display: inline-block; 
+}
+
+/* Conteúdo suspenso (oculto por padrão) */
+.dropdown-content { 
+  display: none; 
+  position: absolute; 
+  background-color: #E74A3F; 
+  min-width: 160px; 
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2); 
+  z-index: 1; 
+}
+
+/* .dropdown-contentperfil { 
+  display: none; 
+  position: absolute; 
+  background-color: #E74A3F; 
+  min-width: 160px; 
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2); 
+  z-index: 1; 
+} */
+
+/* .dropdown-contentperfil a { 
+  color: white; 
+  padding: 12px 16px; 
+  text-decoration: none; 
+  display: block; 
+} */
+
+/* Links dentro do menu suspenso */
+.dropdown-content a { 
+  color: white; 
+  padding: 12px 16px; 
+  text-decoration: none; 
+  display: block; 
+}
+
+/* Alterar a cor dos links suspensos ao passar o mouse */
+/* .dropdown-contentperfil a:hover { 
+  background-color: #f8f9fc; 
+  color: black; 
+} */
+.dropdown-content a:hover { 
+  background-color: #f8f9fc; 
+  color: black; 
+}
+
+/* Mostrar o menu suspenso ao passar o mouse */
+/* .dropdownperfil:hover .dropdown-contentperfil { 
+  display: block; 
+} */
+.dropdown:hover .dropdown-content { 
+  display: block; 
+}
+
+/* ul.perfil li a { 
+  display: block; 
+  color: white; 
+  padding: 8px 16px; 
+  text-decoration: none; 
+} */
+ul.sidenav li a { 
+  display: block; 
+  color: white; 
+  padding: 8px 16px; 
+  text-decoration: none; 
+  width: 180px; 
+}
+
+/* ul.perfil li a:hover { 
+  letter-spacing: 2px; 
+} */
+ul.sidenav li a:hover { 
+  letter-spacing: 2px; 
+}
+
+ul.sidenav li a.active { 
+  background-color: #E74A3F; 
+  color: white; 
+  width: 500px; 
+  padding-left: 156px; 
+}
+
+ul.sidenav li .dropbtn:hover:not(.active) { 
+  background-color: #8c8c8e; 
+  color: white; 
+}
+
+div.content { 
+  /* display: flex; */ 
+  justify-content: center; 
+  margin-left: 25%; 
+  padding: 1px 16px; 
+  height: 100%; 
+  overflow: hidden; 
+  /* display: flex; */ 
+}
+
+@media screen and (max-width: 900px) { 
+  ul.sidenav { 
+      width: 100%; 
+      height: auto; 
+      position: relative; 
+  }
+
+  ul.sidenav li a { 
+      float: left; 
+      padding: 15px; 
+  }
+
+  div.content { 
+      margin-left: 0; 
+  }
+}
+
+@media screen and (max-width: 400px) { 
+  ul.sidenav li a { 
+      text-align: center; 
+      float: none; 
+  }
+}

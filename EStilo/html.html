@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Listagem de Docentes</title>
+<link rel="stylesheet" href="styles.css">
+<style>
+    body {
+  font-family: Arial, sans-serif;
+  background-color: #f5f5f5;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.docente-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.docente-card {
+  background-color: white;
+  border: 1px solid #ddd;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  flex: 1;
+  max-width: 300px;
+}
+
+.docente-card h2 {
+  margin-top: 0;
+}
+
+.docente-card p {
+  margin: 10px 0;
+}
+
+.docente-card strong {
+  font-weight: bold;
+}
+</style>
+</head>
+<body>
+  <div class="container">
+    <h1>Listagem de Docentes</h1>
+    <div class="docente-list">
+      <!-- Replace this section with PHP to loop through and display docente data -->
+      <div class="docente-card">
+        <h2>John Doe</h2>
+        <p><strong>ID:</strong> ID123456</p>
+        <p><strong>Contacto:</strong> 123456789</p>
+        <p><strong>Email:</strong> johndoe@example.com</p>
+        <p><strong>Grau Académico:</strong> Ph.D. in Computer Science</p>
+        <p><strong>Formação:</strong> Computer Science</p>
+        <p><strong>Nacionalidade:</strong> Mozambique</p>
+        <p><strong>Género:</strong> Male</p>
+        <p><strong>ID Faculdade:</strong> FAC123</p>
+        <button class="delete-button" data-id="ID123456">Delete</button>
+      </div>
+      <!-- End of PHP loop -->
+    </div>
+  </div>
+
+  <script>
+    // JavaScript to handle delete button click
+    const deleteButtons = document.querySelectorAll('.delete-button');
+    deleteButtons.forEach(button => {
+      button.addEventListener('click', function() {
+        const docenteId = button.getAttribute('data-id');
+        if (confirm(`Are you sure you want to delete the docente with ID ${docenteId}?`)) {
+          // Add your AJAX request or form submission logic here to delete the record
+          // After successful deletion, you can remove the card from the DOM
+          button.parentElement.remove();
+        }
+      });
+    });
+  </script>
+</body>
+</html>

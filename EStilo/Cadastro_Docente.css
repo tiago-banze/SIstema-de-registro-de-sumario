@@ -1,0 +1,160 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+/* body{
+    width: 100vw;
+    height: 100vh;
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    background-color: #e4e2e2; 
+} */
+ul,a{
+    font-size: 25px;
+  }
+  
+.barra{
+    width: 100%;
+    height: 60px;
+    border-bottom:2px solid black ;
+    display: flex;
+    align-items: center;
+    position: fixed;
+    background-color: #f1f1f1;
+}
+
+span input{
+    width: 200px;
+    height: 25px;
+    border-radius: 5px;
+    font-size: 19px;
+    box-shadow: 1px 2px 1px 1px black;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    /* padding: 4px; */
+    margin-left: 670px;  
+  }
+  
+h4 {
+    margin-left: 15px;
+}
+
+  img{
+    margin-left: 50px;
+  } 
+  
+  span button{
+    height: 25px;
+    border-radius: 5px;
+    background-color: blue;
+    color: white;
+  }
+
+input:hover{
+    border: 2px solid blue;
+    transition: 0.3s;
+}
+
+.pai{
+    width: 100%;
+    height: 600px;
+    background-color:#e4e2e2;
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    border-radius: 0px 0px 10px 10px; 
+    /* border: 2px solid black; */
+    border: none;
+    position: relative;
+    /* box-shadow: 2px 2px 5px 5px black; */
+    margin-top: 1px;
+}
+
+.left{
+    width: 500px;
+    height: 500px;
+    /* background-color: red; */
+    /* border-right: 2px solid black; */
+    /* border-radius: 10px; */
+    border: none;
+}
+
+.tamanhoinput{
+    width: 450px;
+    height: 50px;
+    margin-left: 18px;
+    border-radius: 10px;
+    padding-left: 30px;
+    border: 2px solid black;
+    font-size: 19px;
+    box-shadow: 1px 2px 1px 1px black;
+}
+
+.tamanhoinput:hover{
+    border: 2px solid blue;
+}
+
+.tiago{
+    width: 480px;
+}
+
+div .right #rightinput{
+    margin-right: 60px;
+}
+
+.input{
+    margin-top: 50px;
+}
+
+.right{
+    width: 500px;
+    height: 500px;
+    /* border-left: 2px solid black; */
+    /* background-color: black; */
+    /* border-radius: 10px; */
+    border: none;
+}
+
+fieldset{
+    margin-top: 70px;
+    width: 100%;
+    border-radius: 10px;
+    border: 3px solid black;
+    box-shadow: 0px 5px 5px 2px rgb(120, 116, 116);
+    /* font-size: 25px; */
+    font-size: 19px;
+    text-shadow: 1.2px 1px;
+}
+
+ul,a{
+    font-size: 25px;
+}
+
+.botao{
+    position: absolute;
+    margin-top: 550px;
+    width: 250px;
+    height: 40px;
+    /* right: 30px; */
+    font-size: 25px;
+    border-radius: 10px;
+    background-color: black;
+    color: white;
+}
+
+.botao:hover{
+    color: black;
+    background-color: rgb(190, 188, 188);
+    border: 2px solid black;
+    transition: 0.3s;
+    cursor: pointer;
+    box-shadow: 1px 1px 1px 1px rgb(74, 72, 72);
+}
+
+legend{
+    /* text-align: center; */
+    margin-left: 100px;
+}

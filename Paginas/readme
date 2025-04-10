@@ -1,0 +1,56 @@
+<?php
+if (session_status() == PHP_SESSION_NONE) {
+    session_start();
+}
+// ... Configurações de conexão e cabeçalho ...
+include_once '../PHP/config.php';
+
+// Consulta para buscar cadeiras
+$sql = "SELECT * FROM cadeiraTBL";
+$stmt = $Conexao->prepare($sql);
+$stmt->execute();
+$cadeiras = $stmt->fetchAll(PDO::FETCH_ASSOC); // Corrigido para $cadeiras
+
+?>
+
+<!DOCTYPE html>
+<html>
+<head>
+<!-- ... (seu código HTML) ... -->
+</head>
+<body>
+
+<!-- ... (seu código HTML) ... -->
+
+<div class="content">
+    <!-- ... (seu código HTML) ... -->
+    <div class="pai">
+        <?php if (count($cadeiras) === 0) { ?>
+            <p>Não há cadeiras cadastrados.</p>
+        <?php } else { ?>
+            <table>
+                <!-- ... (seu código HTML) ... -->
+                <?php foreach ($cadeiras as $cadeira) { ?>
+                    <tr>
+                        <td><?php echo $cadeira['ID_cadeira']; ?></td>
+                        <td><?php echo $cadeira['nome']; ?></td>
+                        <td><?php echo $cadeira['credito']; ?></td>   
+                        <td><?php echo $cadeira['curso']; ?></td>   
+                        <td class="accao">
+                            <center>
+                                <input class="button azul" type="button" value="atualizar">   
+                                <input class="button vermelho" type="button" value="apagar">
+                            </center> 
+                        </td>   
+                    </tr>
+                <?php } ?>
+            </table>
+        <?php } ?>
+        <!-- ... (seu código HTML) ... -->
+    </div>
+</div>
+
+<!-- ... (seu código HTML) ... -->
+
+</body>
+</html>
